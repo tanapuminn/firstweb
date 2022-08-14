@@ -1,0 +1,248 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: blanchedalmond;
+    box-sizing: border-box;
+}
+.logo{
+    color: white;
+    margin-top: 1rem;
+    font-family: Rubik Mono One;   
+    float: right;
+    object-fit: contain;
+}
+.search{
+    padding: 10px;
+    margin-top: 15px;
+    border: 2px solid transparent;
+    width: 120px;
+    outline: none;
+    border-radius: 10px;
+    background: white;
+    transition: 0.3s;
+}
+.search:focus{
+    border: 3px solid red;
+}
+.container{
+    margin: 0 auto;
+    max-width: 90vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.menubar{
+    width: 100%;
+    height: 70px;
+    background: rgb(83, 82, 82);
+    box-shadow: 0 0 20px black;
+}
+.menubar .logo{
+    float: left;
+}
+
+.nav ul{
+    list-style: none;
+    text-align: center;
+    background-color: rgb(83, 82, 82);
+    padding: 0;
+    margin: 0;
+    float: left;
+    border-radius: 6px;
+    font-family: Pragati Narrow;
+    
+}
+.nav li{
+    line-height: 40px;
+    text-align: left;
+    float: left;
+    font-size: 1rem;
+    margin-top: 10px;
+    
+} 
+.nav a{
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    padding-left: 16px;
+    border-bottom: 2px solid rgb(241, 6, 6);
+    transition: .3s;
+    border-radius: 5px;
+}
+.nav a:hover{
+    background-color: #817d7d;
+}
+.menubar h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: normal;
+    padding: 0%;
+}
+.nav{
+    list-style: none;
+    float: right;
+}
+.nav li a{
+    text-decoration: none;
+    color: yellow;
+    border-bottom: 2px solid transparent;
+    padding-bottom:1px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+.nav li li{
+    font-size: 1rem;
+}
+.homepage{
+    width: 50%;
+}
+
+.endsup{
+    text-align: left;
+}
+h1{
+    text-align: center;
+    font-size: 48px;
+}
+.title {
+    border: 2px solid red;
+    width: 400px;
+    font-size: 22px;
+    text-align: center;
+    padding: 3rem;
+    margin: 2rem;
+    background-color: #8fecc1;
+    
+}
+.time{
+    padding-left: 5rem;
+    background: #74b1eb;
+    display: block;
+    width: 400px;
+}
+
+@media screen and (min-width: 650px) {
+    .nav li{
+        width: 130px;
+        border-bottom: none;
+        line-height: 50px;
+        font-size: 1.4rem;
+        display: inline-block;
+        margin-right: -4px;
+
+    }
+    .nav a{
+        border-bottom: none;
+    }
+    .nav > ul >li{
+        text-align: center;
+    }
+    .nav > ul >li >a{
+        padding-left: 0;
+    }
+
+    .nav li ul{
+        position: absolute;
+        display: none;
+        width: inherit;
+    }
+    .nav li:hover ul{
+        display: block;
+    }
+    .nav li ul li{
+        display: block;
+    }
+}
+
+.area_content{
+    max-width: 1100px;
+    width: 100%;
+    margin: 50px auto;
+    border-radius: 50px;
+}
+.area_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.grid_item{
+    text-align: center;
+    background-color: #ccc5c5;
+    box-shadow: 0 2px 6px rgb(31, 30, 30);
+    transition: 0.2s;
+}
+.grid_item:hover{
+    transform: scale(1.1);
+}
+.item_img img{
+    width: 90%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.item_text{
+    padding-bottom: 20px;
+    text-align: center;
+}
+.item_text p{
+    font-size: 24px;
+}
+.area_content:hover .grid_item:not(:hover){ 
+    opacity: 0.3;
+    
+}
+.nav-profile{
+    display: flex;
+    float: right;
+    margin: 22px;
+    align-items: center;
+}
+.fa-cart-shopping{
+    font-size: 24px;
+    color: white;
+}
+.nav-profile-cart{
+    position: relative;
+}
+.cartcount{
+    position: absolute;
+    top: -14px;
+    right: -18px;
+    width: 25px;
+    height: 25px;
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.cartlist-left{
+    display: flex;
+    width: 40%;
+    float: left;
+    margin: 20px 15px;
+    font-size: 20px;
+}
+.cartlist-right{
+    display: flex;
+    align-items: center;
+}
+.btnc{
+    width: 30px;
+    height: 30px;
+    background-color: #74b1eb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    border: 1px solid black;
+}
+.btn-control button{
+    margin: 12px;
+    background-color: red;
+    color: white;
+    border-radius: 6px;
+}
